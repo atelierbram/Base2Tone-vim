@@ -4,7 +4,7 @@ Base2Tone-vim – colorschemes for Vim – one of the syntax-highlighting applic
 > “DuoTone themes use only 2 hues (7 shades in total). It tones down less important parts (like punctuation and brackets) and highlights only the important ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.”
 
 
-**NOTE**: These color schemes are optimized and have been tested in the _GUI_ version of Vim, and _not_ the terminal version. For a more seamless experience: these same color schemes will also be ported to iTerm2.
+**NOTE**: These color schemes are optimized and have been tested in the _GUI_ version of Vim, and _not_ the terminal version. For a more seamless experience: these same color schemes are also ported to iTerm2, see: <https://github.com/atelierbram/Base2Tone-iterm2>.
 
 All colorschemes will come in a separate dark and light version.
 
