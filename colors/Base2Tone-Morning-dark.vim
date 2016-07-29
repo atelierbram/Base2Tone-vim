@@ -82,54 +82,54 @@ endfun
 
 " Return GUI color for light/dark variants
 fun s:gui(color)
-  if &background == "dark"
-    return a:color
-  endif
-
-  if a:color == s:gui00
-    return s:gui07
-  elseif a:color == s:gui01
-    return s:gui06
-  elseif a:color == s:gui02
-    return s:gui05
-  elseif a:color == s:gui03
-    return s:gui04
-  elseif a:color == s:gui04
-    return s:gui03
-  elseif a:color == s:gui05
-    return s:gui02
-  elseif a:color == s:gui06
-    return s:gui01
-  elseif a:color == s:gui07
-    return s:gui00
-  endif
+"  if &background == "dark"
+"    return a:color
+"  endif
+"
+"  if a:color == s:gui00
+"    return s:gui07
+"  elseif a:color == s:gui01
+"    return s:gui06
+"  elseif a:color == s:gui02
+"    return s:gui05
+"  elseif a:color == s:gui03
+"    return s:gui04
+"  elseif a:color == s:gui04
+"    return s:gui03
+"  elseif a:color == s:gui05
+"    return s:gui02
+"  elseif a:color == s:gui06
+"    return s:gui01
+"  elseif a:color == s:gui07
+"    return s:gui00
+"  endif
 
   return a:color
 endfun
 
 " Return terminal color for light/dark variants
 fun s:cterm(color)
-  if &background == "dark"
-    return a:color
-  endif
-
-  if a:color == s:cterm00
-    return s:cterm07
-  elseif a:color == s:cterm01
-    return s:cterm06
-  elseif a:color == s:cterm02
-    return s:cterm05
-  elseif a:color == s:cterm03
-    return s:cterm04
-  elseif a:color == s:cterm04
-    return s:cterm03
-  elseif a:color == s:cterm05
-    return s:cterm02
-  elseif a:color == s:cterm06
-    return s:cterm01
-  elseif a:color == s:cterm07
-    return s:cterm00
-  endif
+"  if &background == "dark"
+"    return a:color
+"  endif
+"
+"  if a:color == s:cterm00
+"    return s:cterm07
+"  elseif a:color == s:cterm01
+"    return s:cterm06
+"  elseif a:color == s:cterm02
+"    return s:cterm05
+"  elseif a:color == s:cterm03
+"    return s:cterm04
+"  elseif a:color == s:cterm04
+"    return s:cterm03
+"  elseif a:color == s:cterm05
+"    return s:cterm02
+"  elseif a:color == s:cterm06
+"    return s:cterm01
+"  elseif a:color == s:cterm07
+"    return s:cterm00
+"  endif
 
   return a:color
 endfun
@@ -150,7 +150,6 @@ call <sid>hi("ModeMsg",       s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("MoreMsg",       s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("Question",      s:gui0D, "", s:cterm0D, "", "")
 call <sid>hi("Search",        s:gui03, s:gui0A, s:cterm03, s:cterm0A,  "")
-call <sid>hi("SpecialKey",    s:gui03, "", s:cterm03, "", "")
 call <sid>hi("TooLong",       s:gui08, "", s:cterm08, "", "")
 call <sid>hi("Underlined",    s:gui08, "", s:cterm08, "", "")
 call <sid>hi("Visual",        "", s:gui02, "", s:cterm02, "")
@@ -161,7 +160,7 @@ call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none")
 call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "")
 call <sid>hi("Cursor",        s:gui00, s:gui09, s:cterm00, s:cterm09, "")
 call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "")
-call <sid>hi("Normal",        s:gui05, s:gui00, s:cterm05, s:cterm00, "")
+call <sid>hi("Normal",        s:gui06, s:gui00, s:cterm06, s:cterm00, "")
 call <sid>hi("LineNr",        s:gui02, s:gui00, s:cterm02, s:cterm00, "")
 call <sid>hi("SignColumn",    s:gui03, s:gui01, s:cterm03, s:cterm01, "")
 call <sid>hi("SpecialKey",    s:gui03, "", s:cterm03, "", "")
@@ -196,7 +195,7 @@ call <sid>hi("Number",       s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("Operator",     s:gui0A, "", s:cterm0A, "", "none")
 call <sid>hi("PreProc",      s:gui0A, "", s:cterm0A, "", "")
 call <sid>hi("Repeat",       s:gui0A, "", s:cterm0A, "", "")
-call <sid>hi("Special",      s:gui02, "", s:cterm02, "", "")
+call <sid>hi("Special",      s:gui05, "", s:cterm05, "", "")
 call <sid>hi("SpecialChar",  s:gui0F, "", s:cterm0F, "", "")
 call <sid>hi("Statement",    s:gui07, "", s:cterm07, "none", "none")
 call <sid>hi("StorageClass", s:gui05, "", s:cterm05, "", "")
@@ -265,7 +264,20 @@ call <sid>hi("javaScriptNumber",      s:gui09, "", s:cterm09, "", "")
 call <sid>hi("javaScriptParens",      s:gui03, "", s:cterm03, "", "")
 call <sid>hi("JavaScriptIdentifier",  s:gui09, "", s:cterm09, "", "")
 call <sid>hi("JavaScriptConditional", s:gui09, "", s:cterm09, "", "")
+call <sid>hi("JavaScriptOpSymbols",   s:gui09, "", s:cterm09, "", "")
+call <sid>hi("JavaScriptOperator",    s:gui09, "", s:cterm09, "", "")
 call <sid>hi("JavaScriptStatement",   s:gui09, "", s:cterm09, "", "")
+call <sid>hi("JavaScriptExceptions",  s:gui09, "", s:cterm09, "", "")
+call <sid>hi("JavaScriptFuncArg",     s:gui06, "", s:cterm06, "", "")
+call <sid>hi("JavaScriptFuncComma",   s:gui03, "", s:cterm03, "", "")
+call <sid>hi("JavaScriptEndColons",   s:gui03, "", s:cterm03, "", "")
+call <sid>hi("JavaScriptIdentifier",  s:gui0C, "", s:cterm0C, "", "")
+call <sid>hi("JavaScriptDeprecated",  s:gui06, "", s:cterm06, "", "")
+call <sid>hi("JavaScriptFuncDef",     s:gui07, "", s:cterm07, "", "")
+call <sid>hi("JavaScriptFunctionKey", s:gui07, "", s:cterm07, "", "")
+call <sid>hi("JavaScriptFuncExp",     s:gui07, "", s:cterm07, "", "")
+call <sid>hi("JavaScriptString",      s:gui07, "", s:cterm07, "", "")
+call <sid>hi("JavaScriptPrototype",   s:gui0C, "", s:cterm0C, "", "")
 
 " Markdown highlighting
 call <sid>hi("markdownCode",              s:gui0B, "", s:cterm0B, "", "")
