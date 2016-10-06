@@ -1,4 +1,4 @@
-" Base2Tone-Lake-light (https://github.com/chriskempson/base16)
+" Base2Tone-Meadow-dark (https://github.com/chriskempson/base16)
 " Scheme: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
 
 " This enables the coresponding base16-shell script to run so that
@@ -7,27 +7,27 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has('gui_running')
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/Base2Tone-Lake-light.".&background.".sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/Base2Tone-Meadow-dark.".&background.".sh"
   endif
 endif
 
 " GUI color definitions
-let s:gui00 = "fafaf9"
-let s:gui01 = "e8e7e3"
-let s:gui02 = "d5d4cd"
-let s:gui03 = "c2c1b7"
-let s:gui04 = "467686"
-let s:gui05 = "cbbb4d"
-let s:gui06 = "b7a21a"
-let s:gui07 = "84740b"
-let s:gui08 = "c4b031"
-let s:gui09 = "62b1cb"
-let s:gui0A = "b7a21a"
-let s:gui0B = "7a7971"
-let s:gui0C = "2f7289"
-let s:gui0D = "c4b031"
-let s:gui0E = "7dc2d9"
-let s:gui0F = "a5d8e9"
+let s:gui00 = "192834"
+let s:gui01 = "223644"
+let s:gui02 = "335166"
+let s:gui03 = "3d5e76"
+let s:gui04 = "466b86"
+let s:gui05 = "4299d7"
+let s:gui06 = "8dcefc"
+let s:gui07 = "d1ecff"
+let s:gui08 = "1b6498"
+let s:gui09 = "66a329"
+let s:gui0A = "80bf40"
+let s:gui0B = "757b6f"
+let s:gui0C = "a6f655"
+let s:gui0D = "8cdd3c"
+let s:gui0E = "277fbe"
+let s:gui0F = "2172ab"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -59,7 +59,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "Base2Tone-Lake-light"
+let g:colors_name = "Base2Tone-Meadow-dark"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
@@ -142,14 +142,14 @@ call <sid>hi("ErrorMsg",      s:gui08, s:gui00, s:cterm08, s:cterm00, "")
 call <sid>hi("Exception",     s:gui08, "", s:cterm08, "", "")
 call <sid>hi("FoldColumn",    "", s:gui01, "", s:cterm01, "")
 call <sid>hi("Folded",        s:gui03, s:gui01, s:cterm03, s:cterm01, "")
-call <sid>hi("IncSearch",     s:gui00, s:gui0E, s:cterm00, s:cterm0E, "none")
+call <sid>hi("IncSearch",     s:gui01, s:gui09, s:cterm01, s:cterm09, "none")
 call <sid>hi("Italic",        "", "", "", "", "none")
 call <sid>hi("Macro",         s:gui08, "", s:cterm08, "", "")
 call <sid>hi("MatchParen",    s:gui00, s:gui03, s:cterm00, s:cterm03,  "")
 call <sid>hi("ModeMsg",       s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("MoreMsg",       s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("Question",      s:gui0D, "", s:cterm0D, "", "")
-call <sid>hi("Search",        s:gui00, s:gui09, s:cterm00, s:cterm09,  "")
+call <sid>hi("Search",        s:gui03, s:gui0A, s:cterm03, s:cterm0A,  "")
 call <sid>hi("TooLong",       s:gui08, "", s:cterm08, "", "")
 call <sid>hi("Underlined",    s:gui08, "", s:cterm08, "", "")
 call <sid>hi("Visual",        "", s:gui02, "", s:cterm02, "")
@@ -158,7 +158,7 @@ call <sid>hi("WarningMsg",    s:gui08, "", s:cterm08, "", "")
 call <sid>hi("WildMenu",      s:gui08, "", s:cterm08, "", "")
 call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none")
 call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "")
-call <sid>hi("Cursor",        s:gui00, s:gui0E, s:cterm00, s:cterm0E, "")
+call <sid>hi("Cursor",        s:gui00, s:gui09, s:cterm00, s:cterm09, "")
 call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "")
 call <sid>hi("Normal",        s:gui06, s:gui00, s:cterm06, s:cterm00, "")
 call <sid>hi("LineNr",        s:gui02, s:gui00, s:cterm02, s:cterm00, "")
@@ -260,24 +260,23 @@ call <sid>hi("htmlTagN",     s:gui07, "", s:cterm07, "", "")
 " JavaScript highlighting
 call <sid>hi("javaScript",            s:gui05, "", s:cterm05, "", "")
 call <sid>hi("javaScriptBraces",      s:gui03, "", s:cterm03, "", "")
-call <sid>hi("javaScriptNumber",      s:gui0C, "", s:cterm0C, "", "")
+call <sid>hi("javaScriptNumber",      s:gui09, "", s:cterm09, "", "")
 call <sid>hi("javaScriptParens",      s:gui03, "", s:cterm03, "", "")
-call <sid>hi("JavaScriptIdentifier",  s:gui0A, "", s:cterm0A, "", "")
+call <sid>hi("JavaScriptIdentifier",  s:gui09, "", s:cterm09, "", "")
 call <sid>hi("JavaScriptConditional", s:gui09, "", s:cterm09, "", "")
-call <sid>hi("JavaScriptExceptions",  s:gui09, "", s:cterm09, "", "")
-call <sid>hi("JavaScriptOperator",    s:gui09, "", s:cterm09, "", "")
 call <sid>hi("JavaScriptOpSymbols",   s:gui09, "", s:cterm09, "", "")
-call <sid>hi("JavaScriptRepeat",      s:gui09, "", s:cterm09, "", "")
+call <sid>hi("JavaScriptOperator",    s:gui09, "", s:cterm09, "", "")
 call <sid>hi("JavaScriptStatement",   s:gui09, "", s:cterm09, "", "")
-call <sid>hi("JavaScriptFuncArg",     s:gui06, "", s:cterm06, "", "") 
+call <sid>hi("JavaScriptExceptions",  s:gui09, "", s:cterm09, "", "")
+call <sid>hi("JavaScriptFuncArg",     s:gui06, "", s:cterm06, "", "")
 call <sid>hi("JavaScriptFuncComma",   s:gui03, "", s:cterm03, "", "")
 call <sid>hi("JavaScriptEndColons",   s:gui03, "", s:cterm03, "", "")
 call <sid>hi("JavaScriptIdentifier",  s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("JavaScriptDeprecated",  s:gui06, "", s:cterm06, "", "")
 call <sid>hi("JavaScriptFuncDef",     s:gui07, "", s:cterm07, "", "")
 call <sid>hi("JavaScriptFunctionKey", s:gui07, "", s:cterm07, "", "")
-call <sid>hi("JavaScriptString",      s:gui07, "", s:cterm07, "", "")
 call <sid>hi("JavaScriptFuncExp",     s:gui07, "", s:cterm07, "", "")
+call <sid>hi("JavaScriptString",      s:gui07, "", s:cterm07, "", "")
 call <sid>hi("JavaScriptPrototype",   s:gui0C, "", s:cterm0C, "", "")
 
 " Markdown highlighting

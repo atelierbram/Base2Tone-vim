@@ -25,6 +25,10 @@ overwrite_to_file()
   base16-builder --scheme "db/schemes/base2tone-cave.yml" --template "db/templates/vim/light.ejs" > "colors/Base2Tone-Cave-light.vim"
   base16-builder --scheme "db/schemes/base2tone-heath.yml" --template "db/templates/vim/dark.ejs" > "colors/Base2Tone-Heath-dark.vim"
   base16-builder --scheme "db/schemes/base2tone-heath.yml" --template "db/templates/vim/light.ejs" > "colors/Base2Tone-Heath-light.vim"
+  base16-builder --scheme "db/schemes/base2tone-drawbridge.yml" --template "db/templates/vim/dark.ejs" > "colors/Base2Tone-Drawbridge-dark.vim"
+  base16-builder --scheme "db/schemes/base2tone-drawbridge.yml" --template "db/templates/vim/light.ejs" > "colors/Base2Tone-Drawbridge-light.vim"
+  base16-builder --scheme "db/schemes/base2tone-meadow.yml" --template "db/templates/vim/dark.ejs" > "colors/Base2Tone-Meadow-dark.vim"
+  base16-builder --scheme "db/schemes/base2tone-meadow.yml" --template "db/templates/vim/light.ejs" > "colors/Base2Tone-Meadow-light.vim"
  }
 
 # execute it

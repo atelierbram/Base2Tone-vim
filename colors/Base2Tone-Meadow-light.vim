@@ -1,4 +1,4 @@
-" Base2Tone-Lake-light (https://github.com/chriskempson/base16)
+" Base2Tone-Meadow-light (https://github.com/chriskempson/base16)
 " Scheme: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
 
 " This enables the coresponding base16-shell script to run so that
@@ -7,27 +7,27 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has('gui_running')
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/Base2Tone-Lake-light.".&background.".sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/Base2Tone-Meadow-light.".&background.".sh"
   endif
 endif
 
 " GUI color definitions
-let s:gui00 = "fafaf9"
-let s:gui01 = "e8e7e3"
-let s:gui02 = "d5d4cd"
-let s:gui03 = "c2c1b7"
-let s:gui04 = "467686"
-let s:gui05 = "cbbb4d"
-let s:gui06 = "b7a21a"
-let s:gui07 = "84740b"
-let s:gui08 = "c4b031"
-let s:gui09 = "62b1cb"
-let s:gui0A = "b7a21a"
-let s:gui0B = "7a7971"
-let s:gui0C = "2f7289"
-let s:gui0D = "c4b031"
-let s:gui0E = "7dc2d9"
-let s:gui0F = "a5d8e9"
+let s:gui00 = "fafbf9"
+let s:gui01 = "e6e8e3"
+let s:gui02 = "d1d6cd"
+let s:gui03 = "bdc3b7"
+let s:gui04 = "466b86"
+let s:gui05 = "80bf40"
+let s:gui06 = "66a329"
+let s:gui07 = "4d8217"
+let s:gui08 = "73b234"
+let s:gui09 = "47adf5"
+let s:gui0A = "66a329"
+let s:gui0B = "757b6f"
+let s:gui0C = "1b6498"
+let s:gui0D = "73b234"
+let s:gui0E = "8dcefc"
+let s:gui0F = "afddfe"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -59,7 +59,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "Base2Tone-Lake-light"
+let g:colors_name = "Base2Tone-Meadow-light"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
