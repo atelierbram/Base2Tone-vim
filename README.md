@@ -70,6 +70,8 @@ colorscheme Base2Tone-Evening-dark
 " colorscheme Base2Tone-Forest-dark
 " colorscheme Base2Tone-Desert-dark
 " colorscheme Base2Tone-Lake-dark
+" colorscheme Base2Tone-Meadow-dark
+" colorscheme Base2Tone-Drawbridge-dark
 " colorscheme Base2Tone-Pool-dark
 " colorscheme Base2Tone-Heath-dark
 " colorscheme Base2Tone-Cave-dark
@@ -84,11 +86,12 @@ colorscheme Base2Tone-Evening-dark
 " colorscheme Base2Tone-Forest-light
 " colorscheme Base2Tone-Desert-light
 " colorscheme Base2Tone-Lake-light
+" colorscheme Base2Tone-Meadow-light
+" colorscheme Base2Tone-Drawbridge-light
 " colorscheme Base2Tone-Pool-light
 " colorscheme Base2Tone-Heath-light
 " colorscheme Base2Tone-Cave-light
 ```
-
 
 ### Optional
 
