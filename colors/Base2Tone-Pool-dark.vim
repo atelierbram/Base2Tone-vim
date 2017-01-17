@@ -332,6 +332,9 @@ call <sid>hi("SpellLocal",   "", s:gui00, "", s:cterm00, "undercurl")
 call <sid>hi("SpellCap",     "", s:gui00, "", s:cterm00, "undercurl")
 call <sid>hi("SpellRare",    "", s:gui00, "", s:cterm00, "undercurl")
 
+" fugitive higlighthing
+call <sid>hi("gitCommitSummary",  s:gui07, "", s:cterm07, "none", "none")
+
 " Remove functions
 delf <sid>hi
 delf <sid>gui

@@ -269,7 +269,7 @@ call <sid>hi("JavaScriptOperator",    s:gui09, "", s:cterm09, "", "")
 call <sid>hi("JavaScriptOpSymbols",   s:gui09, "", s:cterm09, "", "")
 call <sid>hi("JavaScriptRepeat",      s:gui09, "", s:cterm09, "", "")
 call <sid>hi("JavaScriptStatement",   s:gui09, "", s:cterm09, "", "")
-call <sid>hi("JavaScriptFuncArg",     s:gui06, "", s:cterm06, "", "") 
+call <sid>hi("JavaScriptFuncArg",     s:gui06, "", s:cterm06, "", "")
 call <sid>hi("JavaScriptFuncComma",   s:gui03, "", s:cterm03, "", "")
 call <sid>hi("JavaScriptEndColons",   s:gui03, "", s:cterm03, "", "")
 call <sid>hi("JavaScriptIdentifier",  s:gui0C, "", s:cterm0C, "", "")
@@ -332,6 +332,9 @@ call <sid>hi("SpellBad",     "", s:gui00, "", s:cterm00, "undercurl")
 call <sid>hi("SpellLocal",   "", s:gui00, "", s:cterm00, "undercurl")
 call <sid>hi("SpellCap",     "", s:gui00, "", s:cterm00, "undercurl")
 call <sid>hi("SpellRare",    "", s:gui00, "", s:cterm00, "undercurl")
+
+" fugitive higlighthing
+call <sid>hi("gitCommitSummary",  s:gui07, "", s:cterm07, "none", "none")
 
 " Remove functions
 delf <sid>hi
