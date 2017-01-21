@@ -1,5 +1,5 @@
-" <%- scheme %>Light (https://github.com/chriskempson/base16)
-" Scheme: <%- author %>
+" Base2Tone_ForestLight (https://github.com/chriskempson/base16)
+" Scheme: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
@@ -7,27 +7,27 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has('gui_running')
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/<%- scheme %>Light.".&background.".sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/Base2Tone_ForestLight.".&background.".sh"
   endif
 endif
 
 " GUI color definitions
-let s:gui00 = "<%- base["C7"]["hex"] %>"
-let s:gui01 = "<%- base["C6"]["hex"] %>"
-let s:gui02 = "<%- base["C5"]["hex"] %>"
-let s:gui03 = "<%- base["C4"]["hex"] %>"
-let s:gui04 = "<%- base["A4"]["hex"] %>"
-let s:gui05 = "<%- base["D4"]["hex"] %>"
-let s:gui06 = "<%- base["D2"]["hex"] %>"
-let s:gui07 = "<%- base["D0"]["hex"] %>"
-let s:gui08 = "<%- base["D3"]["hex"] %>"
-let s:gui09 = "<%- base["B4"]["hex"] %>"
-let s:gui0A = "<%- base["D2"]["hex"] %>"
-let s:gui0B = "<%- base["C0"]["hex"] %>"
-let s:gui0C = "<%- base["B0"]["hex"] %>"
-let s:gui0D = "<%- base["D3"]["hex"] %>"
-let s:gui0E = "<%- base["B5"]["hex"] %>"
-let s:gui0F = "<%- base["B6"]["hex"] %>"
+let s:gui00 = "fbfbf8"
+let s:gui01 = "eaecdf"
+let s:gui02 = "d7dac8"
+let s:gui03 = "c3c6b3"
+let s:gui04 = "5e6e5e"
+let s:gui05 = "bfd454"
+let s:gui06 = "a2b34d"
+let s:gui07 = "656b47"
+let s:gui08 = "b1c44f"
+let s:gui09 = "8fae8f"
+let s:gui0A = "a2b34d"
+let s:gui0B = "7d816a"
+let s:gui0C = "435643"
+let s:gui0D = "b1c44f"
+let s:gui0E = "b3d6b3"
+let s:gui0F = "c8e4c8"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -59,7 +59,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "<%- scheme %>Light"
+let g:colors_name = "Base2Tone_ForestLight"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
@@ -344,3 +344,4 @@ delf <sid>cterm
 " Remove color variables
 unlet s:gui00 s:gui01 s:gui02 s:gui03  s:gui04  s:gui05  s:gui06  s:gui07  s:gui08  s:gui09 s:gui0A  s:gui0B  s:gui0C  s:gui0D  s:gui0E  s:gui0F
 unlet s:cterm00 s:cterm01 s:cterm02 s:cterm03 s:cterm04 s:cterm05 s:cterm06 s:cterm07 s:cterm08 s:cterm09 s:cterm0A s:cterm0B s:cterm0C s:cterm0D s:cterm0E s:cterm0F
+
