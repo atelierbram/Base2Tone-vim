@@ -29,10 +29,10 @@ All colorschemes will come in a separate dark and light version.
 
 ## Screenshot
 ![Base2Tone Evening Dark](http://base2t.one/assets/img/png/Base2Tone-Evening-dark-vim_940x640.png)
-Base2Tone-Evening-dark
+Base2Tone_EveningDark
 
 ![Base2Tone Morning Light](http://base2t.one/assets/img/png/Base2Tone-Morning-light-vim_940x640.png)
-Base2Tone-Morning-light
+Base2Tone_MorningLight
 
 **NOTE**: For javaScript users, with the plugin [Enhanced JavaScript Syntax for Vim](https://github.com/jelera/vim-javascript-syntax) the syntax-highlighting of these themes will look much better.
 
