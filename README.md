@@ -163,7 +163,7 @@ chmod +x io.sh
 ```
 
 The templates `light.ejs` and `dark.ejs` can be found in `db/vim`.
-After adapting the templates, or after making a colorscheme (`db/schemes`) one can just type `io.sh` from the commandline, within the parent working directory of Base2Tone-vim. The colorscheme-files will than be regenerated within in the `colors` folder.
+After adapting the templates, or after making a colorscheme (`db/schemes`) one can just type `io.sh` from the commandline, within the parent working directory of Base2Tone-vim. The colorscheme-files will than be regenerated within the `colors`-folder, and the themes for Airline in the `autoload`-folder.
 
 ### Credits
 Credits to [Simurai](http://simurai.com/), for these themes are based on [Duotone Themes](http://simurai.com/projects/2016/01/01/duotone-themes/) for Atom.
