@@ -1,13 +1,6 @@
 # Base2Tone-vim
 
-Base2Tone-vim – colorschemes for Vim – one of the syntax-highlighting applications containing the colorschemes of [Base2Tone](http://base2t.one) which were based on [Duotone Themes](http://simurai.com/projects/2016/01/01/duotone-themes/) by [Simurai](http://simurai.com/) for Atom.
-> “DuoTone themes use only 2 hues (7 shades in total). It tones down less important parts (like punctuation and brackets) and highlights only the important ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.”
-
-**NOTE**: These color schemes are optimized and have been tested in the _GUI_ version of Vim, and _not_ the terminal version. For a more seamless experience: these same color schemes are also ported to iTerm2, see: <https://github.com/atelierbram/Base2Tone-iterm2>.
-
-***   ***   ***   ***   ***   ***   ***   ***   ***
-
- **NOTE**: The files for the colorschemes of Base2Tone-vim, which now comes with support for [Airline](https://github.com/vim-airline/vim-airline) have been renamed from `Base2Tone-<scheme>-dark` to `Base2Tone_<scheme>Dark  `.
+**NOTE**: The files for the colorschemes of Base2Tone-vim, which now come with support for [Airline](https://github.com/vim-airline/vim-airline) have been renamed from `Base2Tone-<scheme>-dark` to `Base2Tone_<scheme>Dark  `.
 
 So instead of defining in vimrc:
 
@@ -21,18 +14,26 @@ it is now:
 colorscheme Base2Tone_eveningDark
 ```
 
-I'm sorry for the inconvenience, (it was a templating issue).
+I'm sorry for any inconvenience.
 
 ***   ***   ***   ***   ***   ***   ***   ***   ***
+
+Base2Tone-vim – colorschemes for Vim – one of the syntax-highlighting applications containing the colorschemes of [Base2Tone](http://base2t.one) which were based on [Duotone Themes](http://simurai.com/projects/2016/01/01/duotone-themes/) by [Simurai](http://simurai.com/) for Atom.
+> “DuoTone themes use only 2 hues (7 shades in total). It tones down less important parts (like punctuation and brackets) and highlights only the important ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.”
+
+**NOTE**: These color schemes are optimized and have been tested in the _GUI_ version of Vim, and _not_ the terminal version. For a more seamless experience: these same color schemes are also ported to iTerm2, see: <https://github.com/atelierbram/Base2Tone-iterm2>.
+
+***   ***   ***   ***   ***   ***   ***   ***   ***
+
 
 All colorschemes will come in a separate dark and light version.
 
 ## Screenshot
 ![Base2Tone Evening Dark](http://base2t.one/assets/img/png/Base2Tone-Evening-dark-vim_940x640.png)
-Base2Tone_EveningDark
+<br>Base2Tone_EveningDark
 
 ![Base2Tone Morning Light](http://base2t.one/assets/img/png/Base2Tone-Morning-light-vim_940x640.png)
-Base2Tone_MorningLight
+<br>Base2Tone_MorningLight
 
 **NOTE**: For javaScript users, with the plugin [Enhanced JavaScript Syntax for Vim](https://github.com/jelera/vim-javascript-syntax) the syntax-highlighting of these themes will look much better.
 
@@ -167,6 +168,8 @@ After adapting the templates, or after making a colorscheme (`db/schemes`) one c
 
 ### Credits
 Credits to [Simurai](http://simurai.com/), for these themes are based on [Duotone Themes](http://simurai.com/projects/2016/01/01/duotone-themes/) for Atom.
+- [Chis Kempson](http://github.com/chriskempson) for creating [Base16 Builder](http://http://github.com/chriskempson/base16-builder)
+- [Alois](https://github.com/aloisdg) and [Alex Booker](https://github.com/bookercodes) for rejuvenating the best colorscheme builder tool on the internet: [Base16 Builder](https://github.com/base16-builder/base16-builder)
 
 ### Resources
 - [Orginal Colorscheme for Atom on simurai.com](http://simurai.com/projects/2016/01/01/duotone-themes/)
