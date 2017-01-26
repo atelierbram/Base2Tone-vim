@@ -21,7 +21,7 @@ I'm sorry for any inconvenience.
 Base2Tone-vim – colorschemes for Vim – one of the syntax-highlighting applications containing the colorschemes of [Base2Tone](http://base2t.one) which were based on [Duotone Themes](http://simurai.com/projects/2016/01/01/duotone-themes/) by [Simurai](http://simurai.com/) for Atom.
 > “DuoTone themes use only 2 hues (7 shades in total). It tones down less important parts (like punctuation and brackets) and highlights only the important ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.”
 
-**NOTE**: These color schemes are optimized and have been tested in the _GUI_ version of Vim, and _not_ the terminal version. For a more seamless experience: these same color schemes are also ported to iTerm2, see: <https://github.com/atelierbram/Base2Tone-iterm2>.
+**NOTE**: These color schemes are optimized and have been tested in the _GUI_ version of Vim, <del>and _not_ the terminal version</del>. For terminals which don’t support truecolor the colors will now use converted colors which are as close as possible in the 8-bit 256 colorspace. For the most seamless experience: these same color schemes are also ported to iTerm2, see: <https://github.com/atelierbram/Base2Tone-iterm2>.
 
 ***   ***   ***   ***   ***   ***   ***   ***   ***
 
@@ -114,7 +114,7 @@ colorscheme Base2Tone_eveningDark
 ```
 
 ### Optional [Airline](https://github.com/vim-airline/vim-airline) Support
-These themes are tested in Gvim, but when using Vim within terminals which **do not** support truecolor, it will fall back on the colors of the default [dark theme for vim-airline](https://github.com/vim-airline/vim-airline/blob/master/autoload/airline/themes/dark.vim).
+These themes are tested in Gvim, but when using Vim within terminals which **do not** support truecolor, <del>it will fall back on the colors of the default [dark theme for vim-airline](https://github.com/vim-airline/vim-airline/blob/master/autoload/airline/themes/dark.vim)</del> it will now use converted colors which are as close as possible in the 8-bit 256 colorspace.
 
 ```vim
 " Dark

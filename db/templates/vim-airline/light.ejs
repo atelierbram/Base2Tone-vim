@@ -4,44 +4,44 @@ scriptencoding utf-8
 
 let g:airline#themes#<%- scheme %>Light#palette = {}
 
-let s:N1   = [ '#<%- base["C0"]["hex"] %>' , '#<%- base["C5"]["hex"] %>' , 17  , 190 ]
-let s:N2   = [ '#<%- base["D0"]["hex"] %>' , '#<%- base["C4"]["hex"] %>' , 255 , 238 ]
-let s:N3   = [ '#<%- base["D1"]["hex"] %>' , '#<%- base["C6"]["hex"] %>' , 85  , 234 ]
+let s:N1   = [ '#<%- base["C0"]["hex"] %>' , '#<%- base["C5"]["hex"] %>' , <%- base["c0"]["hex"] %> , <%- base["c5"]["hex"] %>]
+let s:N2   = [ '#<%- base["D0"]["hex"] %>' , '#<%- base["C4"]["hex"] %>' , <%- base["d0"]["hex"] %> , <%- base["c4"]["hex"] %>]
+let s:N3   = [ '#<%- base["D1"]["hex"] %>' , '#<%- base["C6"]["hex"] %>' , <%- base["d1"]["hex"] %> , <%- base["c6"]["hex"] %>]
 let g:airline#themes#<%- scheme %>Light#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 
 let g:airline#themes#<%- scheme %>Light#palette.normal_modified = {
-      \ 'airline_c': [ '#<%- base["D0"]["hex"] %>' , '#<%- base["C4"]["hex"] %>' , 255     , 53      , ''     ] ,
+      \ 'airline_c': [ '#<%- base["D0"]["hex"] %>' , '#<%- base["C4"]["hex"] %>' , <%- base["d0"]["hex"] %> , <%- base["c4"]["hex"] %> , ''     ] ,
       \ }
 
-let s:I1 = [ '#<%- base["B7"]["hex"] %>' , '#<%- base["B4"]["hex"] %>' , 17  , 45  ]
-let s:I2 = [ '#<%- base["D0"]["hex"] %>' , '#<%- base["D5"]["hex"] %>' , 255 , 27  ]
-let s:I3 = [ '#<%- base["D1"]["hex"] %>' , '#<%- base["C6"]["hex"] %>' , 15  , 17  ]
+let s:I1 = [ '#<%- base["B7"]["hex"] %>' , '#<%- base["B4"]["hex"] %>' , <%- base["b7"]["hex"] %> , <%- base["b4"]["hex"] %>]
+let s:I2 = [ '#<%- base["D0"]["hex"] %>' , '#<%- base["D5"]["hex"] %>' , <%- base["d0"]["hex"] %> , <%- base["d5"]["hex"] %>]
+let s:I3 = [ '#<%- base["D1"]["hex"] %>' , '#<%- base["C6"]["hex"] %>' , <%- base["d1"]["hex"] %> , <%- base["c6"]["hex"] %>]
 let g:airline#themes#<%- scheme %>Light#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
 let g:airline#themes#<%- scheme %>Light#palette.insert_modified = {
-      \ 'airline_c': [ '#<%- base["D0"]["hex"] %>' , '#<%- base["C4"]["hex"] %>' , 255     , 53      , ''     ] ,
+      \ 'airline_c': [ '#<%- base["D0"]["hex"] %>' , '#<%- base["C4"]["hex"] %>' , <%- base["d0"]["hex"] %> , <%- base["c4"]["hex"] %>, ''     ] ,
       \ }
 let g:airline#themes#<%- scheme %>Light#palette.insert_paste = {
-      \ 'airline_a': [ s:I1[0]   , '#<%- base["B0"]["hex"] %>' , s:I1[2] , 172     , ''     ] ,
+      \ 'airline_a': [ s:I1[0]   , '#<%- base["B0"]["hex"] %>' , s:I1[2] , <%- base["b0"]["hex"] %>, ''     ] ,
       \ }
 
 let g:airline#themes#<%- scheme %>Light#palette.replace = copy(g:airline#themes#<%- scheme %>Light#palette.insert)
-let g:airline#themes#<%- scheme %>Light#palette.replace.airline_a = [ s:I2[0]   , '#<%- base["D0"]["hex"] %>' , s:I2[2] , 124     , ''     ]
+let g:airline#themes#<%- scheme %>Light#palette.replace.airline_a = [ s:I2[0]   , '#<%- base["D0"]["hex"] %>' , s:I2[2] , <%- base["d0"]["hex"] %>, ''     ]
 let g:airline#themes#<%- scheme %>Light#palette.replace_modified = g:airline#themes#<%- scheme %>Light#palette.insert_modified
 
-let s:V1 = [ '#<%- base["C7"]["hex"] %>' , '#<%- base["D4"]["hex"] %>' , 232 , 214 ]
-let s:V2 = [ '#<%- base["D0"]["hex"] %>' , '#<%- base["D5"]["hex"] %>' , 232 , 202 ]
-let s:V3 = [ '#<%- base["D1"]["hex"] %>' , '#<%- base["C6"]["hex"] %>' , 15  , 52  ]
+let s:V1 = [ '#<%- base["C7"]["hex"] %>' , '#<%- base["D4"]["hex"] %>' , <%- base["c7"]["hex"] %> , <%- base["d4"]["hex"] %>]
+let s:V2 = [ '#<%- base["D0"]["hex"] %>' , '#<%- base["D5"]["hex"] %>' , <%- base["d0"]["hex"] %> , <%- base["d5"]["hex"] %>]
+let s:V3 = [ '#<%- base["D1"]["hex"] %>' , '#<%- base["C6"]["hex"] %>' , <%- base["d1"]["hex"] %> , <%- base["c6"]["hex"] %>]
 let g:airline#themes#<%- scheme %>Light#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
 let g:airline#themes#<%- scheme %>Light#palette.visual_modified = {
-      \ 'airline_c': [ '#<%- base["D0"]["hex"] %>' , '#<%- base["C4"]["hex"] %>' , 255     , 53      , ''     ] ,
+      \ 'airline_c': [ '#<%- base["D0"]["hex"] %>' , '#<%- base["C4"]["hex"] %>' , <%- base["d0"]["hex"] %> , <%- base["c4"]["hex"] %>, ''     ] ,
       \ }
 
-let s:IA1 = [ '#<%- base["C4"]["hex"] %>' , '#<%- base["C6"]["hex"] %>' , 239 , 234 , '' ]
-let s:IA2 = [ '#<%- base["C4"]["hex"] %>' , '#<%- base["C6"]["hex"] %>' , 239 , 235 , '' ]
-let s:IA3 = [ '#<%- base["C4"]["hex"] %>' , '#<%- base["C6"]["hex"] %>' , 239 , 236 , '' ]
+let s:IA1 = [ '#<%- base["C4"]["hex"] %>' , '#<%- base["C6"]["hex"] %>' , <%- base["c4"]["hex"] %> , <%- base["c6"]["hex"] %>, '' ]
+let s:IA2 = [ '#<%- base["C4"]["hex"] %>' , '#<%- base["C6"]["hex"] %>' , <%- base["c4"]["hex"] %> , <%- base["c6"]["hex"] %>, '' ]
+let s:IA3 = [ '#<%- base["C4"]["hex"] %>' , '#<%- base["C6"]["hex"] %>' , <%- base["c4"]["hex"] %> , <%- base["c6"]["hex"] %>, '' ]
 let g:airline#themes#<%- scheme %>Light#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
 let g:airline#themes#<%- scheme %>Light#palette.inactive_modified = {
-      \ 'airline_c': [ '#<%- base["D0"]["hex"] %>' , '#<%- base["C4"]["hex"] %>' , 255     , 53      , ''     ] ,
+      \ 'airline_c': [ '#<%- base["D0"]["hex"] %>' , '#<%- base["C4"]["hex"] %>' , <%- base["d0"]["hex"] %> , <%- base["c4"]["hex"] %>, ''     ] ,
       \ }
 
 let g:airline#themes#<%- scheme %>Light#palette.accents = {
@@ -52,6 +52,6 @@ if !get(g:, 'loaded_ctrlp', 0)
   finish
 endif
 let g:airline#themes#<%- scheme %>Light#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
-      \ [ '#<%- base["B7"]["hex"] %>' , '#<%- base["B0"]["hex"] %>' , 189 , 55  , ''     ],
-      \ [ '#<%- base["C7"]["hex"] %>' , '#<%- base["B1"]["hex"] %>' , 231 , 98  , ''     ],
-      \ [ '#<%- base["B0"]["hex"] %>' , '#<%- base["C7"]["hex"] %>' , 55  , 231 , 'bold' ])
+      \ [ '#<%- base["B7"]["hex"] %>' , '#<%- base["B0"]["hex"] %>' , <%- base["b7"]["hex"] %> , <%- base["b0"]["hex"] %>, ''     ],
+      \ [ '#<%- base["C7"]["hex"] %>' , '#<%- base["B1"]["hex"] %>' , <%- base["c7"]["hex"] %> , <%- base["b1"]["hex"] %>, ''     ],
+      \ [ '#<%- base["B0"]["hex"] %>' , '#<%- base["C7"]["hex"] %>' , <%- base["b0"]["hex"] %> , <%- base["c7"]["hex"] %>, 'bold' ])
