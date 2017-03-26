@@ -11,7 +11,7 @@ colorscheme Base2Tone-evening-dark
 it is now:
 
 ```
-colorscheme Base2Tone_eveningDark
+colorscheme Base2Tone_EveningDark
 ```
 
 I'm sorry for any inconvenience.
@@ -81,7 +81,7 @@ After either Option 1 or Option 2 above, put the following two lines in your
 syntax enable
 set background=dark
 " Base2Tone Dark
-colorscheme Base2Tone_eveningDark
+colorscheme Base2Tone_EveningDark
 " or any of the other schemes:
 " colorscheme Base2Tone_MorningDark
 " colorscheme Base2Tone_SeaDark
