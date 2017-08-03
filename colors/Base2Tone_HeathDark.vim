@@ -1,15 +1,5 @@
-" Base2Tone_HeathDark (https://github.com/chriskempson/base16)
+" Base2Tone_HeathDark (https://github.com/atelierbram/Base2Tone-vim)
 " Scheme: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
-
-" This enables the coresponding base16-shell script to run so that
-" :colorscheme works in terminals supported by base16-shell scripts
-" User must set this variable in .vimrc
-"   let g:base16_shell_path=base16-builder/output/shell/
-if !has('gui_running')
-  if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/Base2Tone_HeathDark.".&background.".sh"
-  endif
-endif
 
 " GUI color definitions
 let s:gui00 = "222022"
@@ -31,30 +21,21 @@ let s:gui0F = "845e87"
 
 " Terminal color definitions
 let s:cterm00 = "236   "
+let s:cterm01 = "237   "
+let s:cterm02 = "240   "
 let s:cterm03 = "242   "
+let s:cterm04 = "245   "
 let s:cterm05 = "139   "
+let s:cterm06 = "176   "
 let s:cterm07 = "231   "
 let s:cterm08 = "127   "
+let s:cterm09 = "166   "
 let s:cterm0A = "172   "
 let s:cterm0B = "243   "
 let s:cterm0C = "223   "
 let s:cterm0D = "180   "
 let s:cterm0E = "134   "
-if exists('base16colorspace') && base16colorspace == "256"
-  let s:cterm01 = "237   "
-  let s:cterm02 = "240   "
-  let s:cterm04 = "245   "
-  let s:cterm06 = "176   "
-  let s:cterm09 = "166   "
-  let s:cterm0F = "96    "
-else
-  let s:cterm01 = "237   "
-  let s:cterm02 = "240   "
-  let s:cterm04 = "245   "
-  let s:cterm06 = "176   "
-  let s:cterm09 = "166   "
-  let s:cterm0F = "96    "
-endif
+let s:cterm0F = "96    "
 
 " Theme setup
 hi clear
@@ -80,57 +61,13 @@ fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
   endif
 endfun
 
-" Return GUI color for light/dark variants
+" Return GUI color
 fun s:gui(color)
-"  if &background == "dark"
-"    return a:color
-"  endif
-"
-"  if a:color == s:gui00
-"    return s:gui07
-"  elseif a:color == s:gui01
-"    return s:gui06
-"  elseif a:color == s:gui02
-"    return s:gui05
-"  elseif a:color == s:gui03
-"    return s:gui04
-"  elseif a:color == s:gui04
-"    return s:gui03
-"  elseif a:color == s:gui05
-"    return s:gui02
-"  elseif a:color == s:gui06
-"    return s:gui01
-"  elseif a:color == s:gui07
-"    return s:gui00
-"  endif
-
   return a:color
 endfun
 
-" Return terminal color for light/dark variants
+" Return terminal color
 fun s:cterm(color)
-"  if &background == "dark"
-"    return a:color
-"  endif
-"
-"  if a:color == s:cterm00
-"    return s:cterm07
-"  elseif a:color == s:cterm01
-"    return s:cterm06
-"  elseif a:color == s:cterm02
-"    return s:cterm05
-"  elseif a:color == s:cterm03
-"    return s:cterm04
-"  elseif a:color == s:cterm04
-"    return s:cterm03
-"  elseif a:color == s:cterm05
-"    return s:cterm02
-"  elseif a:color == s:cterm06
-"    return s:cterm01
-"  elseif a:color == s:cterm07
-"    return s:cterm00
-"  endif
-
   return a:color
 endfun
 
@@ -207,8 +144,12 @@ call <sid>hi("Type",         s:gui06, "", s:cterm06, "", "none")
 call <sid>hi("Typedef",      s:gui0A, "", s:cterm0A, "", "")
 
 " C highlighting
-call <sid>hi("cOperator",   s:gui0C, "", s:cterm0C, "", "")
-call <sid>hi("cPreCondit",  s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("cType",         s:gui0C, "", s:cterm0C, "", "")
+call <sid>hi("cOperator",     s:gui0C, "", s:cterm0C, "", "")
+call <sid>hi("cPreCondit",    s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("cStorageClass", s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("cConditional",  s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("cRepeat",       s:gui0E, "", s:cterm0E, "", "")
 
 " C# highlighting
 call <sid>hi("csClass",                 s:gui0A, "", s:cterm0A, "", "")
@@ -290,22 +231,51 @@ call <sid>hi("NERDTreeDirSlash",  s:gui0D, "", s:cterm0D, "", "")
 call <sid>hi("NERDTreeExecFile",  s:gui05, "", s:cterm05, "", "")
 
 " PHP highlighting
+call <sid>hi("phpVarSelector",     s:gui09, "", s:cterm09, "", "")
 call <sid>hi("phpMemberSelector",  s:gui05, "", s:cterm05, "", "")
 call <sid>hi("phpComparison",      s:gui05, "", s:cterm05, "", "")
 call <sid>hi("phpParent",          s:gui05, "", s:cterm05, "", "")
+call <sid>hi("phpKeyword",         s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("phpRepeat",          s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("phpConditional",     s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("phpStatement",       s:gui0E, "", s:cterm0E, "", "")
 
 " Python highlighting
 call <sid>hi("pythonOperator",  s:gui0E, "", s:cterm0E, "", "")
 call <sid>hi("pythonRepeat",    s:gui0E, "", s:cterm0E, "", "")
+exe 'hi link pythonInclude Include'
+exe 'hi link pythonStatement Statement'
+exe 'hi link pythonConditional Conditional'
+exe 'hi link pythonRepeat Repeat'
+exe 'hi link pythonException Exception'
+exe 'hi link pythonFunction Function'
+
+" Go Highlighting
+exe 'hi link goStatement Statement'
+exe 'hi link goConditional Conditional'
+exe 'hi link goRepeat Repeat'
+exe 'hi link goException Exception'
+call <sid>hi("goDeclaration",  s:gui08, "", s:cterm08, "", "")
+exe 'hi link goConstants Constant'
+call <sid>hi("goBuiltins",  s:gui09, "", s:cterm09, "", "")
+
+" CoffeeScript Highlighting
+exe 'hi link coffeeKeyword Keyword'
+exe 'hi link coffeeConditional Conditional'
 
 " Ruby highlighting
 call <sid>hi("rubyAttribute",               s:gui0D, "", s:cterm0D, "", "")
+call <sid>hi("rubyInclude",                 s:gui0D, "", s:cterm0D, "", "")
+call <sid>hi("rubyLocalVariableOrMethod",   s:gui0F, "", s:cterm0F, "", "")
+call <sid>hi("rubyCurlyBlock",              s:gui0F, "", s:cterm0F, "", "")
 call <sid>hi("rubyConstant",                s:gui0A, "", s:cterm0A, "", "")
 call <sid>hi("rubyInterpolation",           s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("rubyInterpolationDelimiter",  s:gui0F, "", s:cterm0F, "", "")
 call <sid>hi("rubyRegexp",                  s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("rubySymbol",                  s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("rubyStringDelimiter",         s:gui0B, "", s:cterm0B, "", "")
+call <sid>hi("rubyConditional",             s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("rubyRepeat",                  s:gui0E, "", s:cterm0E, "", "")
 
 " SASS highlighting
 call <sid>hi("sassidChar",        s:gui08, "", s:cterm08, "", "")
