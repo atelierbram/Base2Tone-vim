@@ -11,7 +11,7 @@ let s:gui05 = "cbbb4d"
 let s:gui06 = "b7a21a"
 let s:gui07 = "84740b"
 let s:gui08 = "c4b031"
-let s:gui09 = "62b1cb"
+let s:gui09 = "3e91ac"
 let s:gui0A = "b7a21a"
 let s:gui0B = "7a7971"
 let s:gui0C = "2f7289"
@@ -29,7 +29,7 @@ let s:cterm05 = "144   "
 let s:cterm06 = "143   "
 let s:cterm07 = "94    "
 let s:cterm08 = "144   "
-let s:cterm09 = "74    "
+let s:cterm09 = "32    "
 let s:cterm0A = "143   "
 let s:cterm0B = "244   "
 let s:cterm0C = "24    "
@@ -132,10 +132,10 @@ call <sid>hi("Number",       s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("Operator",     s:gui0A, "", s:cterm0A, "", "none")
 call <sid>hi("PreProc",      s:gui0A, "", s:cterm0A, "", "")
 call <sid>hi("Repeat",       s:gui0A, "", s:cterm0A, "", "")
-call <sid>hi("Special",      s:gui05, "", s:cterm05, "", "")
+call <sid>hi("Special",      s:gui06, "", s:cterm06, "", "")
 call <sid>hi("SpecialChar",  s:gui0F, "", s:cterm0F, "", "")
 call <sid>hi("Statement",    s:gui07, "", s:cterm07, "none", "none")
-call <sid>hi("StorageClass", s:gui05, "", s:cterm05, "", "")
+call <sid>hi("StorageClass", s:gui06, "", s:cterm06, "", "")
 call <sid>hi("String",       s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("Structure",    s:gui0E, "", s:cterm0E, "", "")
 call <sid>hi("Tag",          s:gui0A, "", s:cterm0A, "", "")
@@ -199,7 +199,7 @@ call <sid>hi("htmlTag",     s:gui03, "", s:cterm03, "", "")
 call <sid>hi("htmlTagN",     s:gui07, "", s:cterm07, "", "")
 
 " JavaScript highlighting
-call <sid>hi("javaScript",            s:gui05, "", s:cterm05, "", "")
+call <sid>hi("javaScript",            s:gui06, "", s:cterm06, "", "")
 call <sid>hi("javaScriptBraces",      s:gui03, "", s:cterm03, "", "")
 call <sid>hi("javaScriptNumber",      s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("javaScriptParens",      s:gui03, "", s:cterm03, "", "")
@@ -223,19 +223,19 @@ call <sid>hi("JavaScriptPrototype",   s:gui0C, "", s:cterm0C, "", "")
 
 " Markdown highlighting
 call <sid>hi("markdownCode",              s:gui0B, "", s:cterm0B, "", "")
-call <sid>hi("markdownError",             s:gui05, s:gui00, s:cterm05, s:cterm00, "")
+call <sid>hi("markdownError",             s:gui06, s:gui00, s:cterm06, s:cterm00, "")
 call <sid>hi("markdownCodeBlock",         s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("markdownHeadingDelimiter",  s:gui0D, "", s:cterm0D, "", "")
 
 " NERDTree highlighting
 call <sid>hi("NERDTreeDirSlash",  s:gui0D, "", s:cterm0D, "", "")
-call <sid>hi("NERDTreeExecFile",  s:gui05, "", s:cterm05, "", "")
+call <sid>hi("NERDTreeExecFile",  s:gui06, "", s:cterm06, "", "")
 
 " PHP highlighting
 call <sid>hi("phpVarSelector",     s:gui09, "", s:cterm09, "", "")
-call <sid>hi("phpMemberSelector",  s:gui05, "", s:cterm05, "", "")
-call <sid>hi("phpComparison",      s:gui05, "", s:cterm05, "", "")
-call <sid>hi("phpParent",          s:gui05, "", s:cterm05, "", "")
+call <sid>hi("phpMemberSelector",  s:gui06, "", s:cterm06, "", "")
+call <sid>hi("phpComparison",      s:gui06, "", s:cterm06, "", "")
+call <sid>hi("phpParent",          s:gui06, "", s:cterm06, "", "")
 call <sid>hi("phpKeyword",         s:gui0E, "", s:cterm0E, "", "")
 call <sid>hi("phpRepeat",          s:gui0E, "", s:cterm0E, "", "")
 call <sid>hi("phpConditional",     s:gui0E, "", s:cterm0E, "", "")
@@ -290,7 +290,7 @@ call <sid>hi("scssVariable",      s:gui06, "", s:cterm06, "", "")
 call <sid>hi("scssSelectorChar",  s:gui04, "", s:cterm04, "", "")
 call <sid>hi("cssIncludeKeyword", s:gui07, "", s:cterm07, "", "")
 call <sid>hi("scssMixinParams",   s:gui03, "", s:cterm03, "", "")
-call <sid>hi("scssFunctionName",  s:gui05, "", s:cterm05, "", "")
+call <sid>hi("scssFunctionName",  s:gui06, "", s:cterm06, "", "")
 
 " Signify highlighting
 call <sid>hi("SignifySignAdd",     s:gui0B, s:gui01, s:cterm0B, s:cterm01, "")
