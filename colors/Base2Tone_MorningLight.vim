@@ -309,7 +309,7 @@ call <sid>hi("gitCommitSummary",  s:gui07, "", s:cterm07, "none", "none")
 " neovim terminal
 if has('nvim')
 hi! link TermCursor Cursor
-hi TermCursorNC ctermfg=s:cterm00 ctermbg=s:cterm0E guifg=s:gui00 guibg=s:gui0E guisp=NONE cterm=NONE gui=NONE
+hi TermCursorNC ctermfg=230    ctermbg=68     guifg=s:gui00 guibg=s:gui09 guisp=NONE cterm=NONE gui=NONE
   let g:terminal_color_0  = "#" . s:gui00
   let g:terminal_color_1  = "#" . s:gui01
   let g:terminal_color_2  = "#" . s:gui02
