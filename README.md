@@ -1,27 +1,20 @@
 # Base2Tone-vim
 
-**NOTE**: The files for the colorschemes of Base2Tone-vim, which now come with support for [Airline](https://github.com/vim-airline/vim-airline) have been renamed from `Base2Tone-<scheme>-dark` to `Base2Tone_<scheme>Dark  `.
-
-So instead of defining in vimrc:
-
-```
-colorscheme Base2Tone-evening-dark
-```
-
-it is now:
-
-```
-colorscheme Base2Tone_EveningDark
-```
-
-I'm sorry for any inconvenience.
-
-***   ***   ***   ***   ***   ***   ***   ***   ***
-
 Base2Tone-vim – colorschemes for Vim – one of the syntax-highlighting applications containing the colorschemes of [Base2Tone](http://base2t.one) which were based on [Duotone Themes](http://simurai.com/projects/2016/01/01/duotone-themes/) by [Simurai](http://simurai.com/) for Atom.
 > “DuoTone themes use only 2 hues (7 shades in total). It tones down less important parts (like punctuation and brackets) and highlights only the important ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.”
 
-**NOTE**: These color schemes are optimized and have been tested in the _GUI_ version of Vim, <del>and _not_ the terminal version</del>. For terminals which don’t support truecolor the colors will now use converted colors which are as close as possible in the 8-bit 256 colorspace. It works  fine and looks good in Neovim, for the Gui colors for Neovim are now also specifically defined. For the most seamless experience: these same color schemes are also ported to [iTerm2](https://github.com/atelierbram/Base2Tone-iterm2) and [Hyper](https://github.com/atelierbram/Base2Tone-hyperterm).
+**NOTE**: These color schemes are optimized and have been tested in the _GUI_ version of Vim, and will work in terminal versions as well. For terminals which don’t support truecolor the colors will now use converted colors which are as close as possible in the 8-bit 256 colorspace. It works  fine and looks good in Neovim, for the Gui colors for Neovim are now also specifically defined.
+For Terminal Vim 8+ and/or Neovim, in your (sourced) `.vimrc` or default `.config/nvim/init.vim`, have something like this:
+
+```bash
+set termguicolors
+ if has('nvim')
+" https://github.com/neovim/neovim/wiki/FAQ
+set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
+endif
+```
+
+For the most seamless experience: these same color schemes are also ported to [iTerm2](https://github.com/atelierbram/Base2Tone-iterm2) and [Hyper](https://github.com/atelierbram/Base2Tone-hyperterm).
 
 ***   ***   ***   ***   ***   ***   ***   ***   ***
 
@@ -49,8 +42,24 @@ $ cd Base2Tone-vim/colors
 $ mv *.vim ~/.vim/colors/
 ```
 
-### Option 2: Pathogen installation ***(recommended)***
-Easy clone [Base2Tone-vim](https://github.com/atelierbram/Base2Tone-vim) colorschemes, with plugin manager [Pathogen].
+### Option 2: for Vim 8+ installation in default pack/start folder of build-in package manager
+```bash
+$ cd ~/.vim/pack/bundle/start
+$ git clone https://github.com/atelierbram/Base2Tone-vim.git
+```
+
+### Option 3: for Vim 8+ and Neovim installation with minpac _recommended_
+
+1. Install [minpac plugin](https://github.com/k-takata/minpac)
+2. in `.vimrc`:
+
+```bash
+call minpac#add('k-takata/minpac', {'type': 'opt'})
+call minpac#add('atelierbram/Base2Tone-vim')
+```
+
+### Option 4: Pathogen installation
+Clone [Base2Tone-vim](https://github.com/atelierbram/Base2Tone-vim) colorschemes, with plugin manager [Pathogen].
 
 1.  Download and install Tim Pope's [Pathogen].
 
@@ -175,6 +184,7 @@ Credits to [Simurai](http://simurai.com/), for these themes are based on [Duoton
 - [Orginal Colorscheme for Atom on simurai.com](http://simurai.com/projects/2016/01/01/duotone-themes/)
 - [Orginal Colorscheme for Atom on Github](https://github.com/simurai/duotone-dark-syntax/blob/master/styles/colors.less)
 - [Creating Colorschemes for Vim on vimcasts.org](http://vimcasts.org/episodes/creating-colorschemes-for-vim/)
+- [Meet minpac](http://vimcasts.org/episodes/minpac/)
 - [vim plugin to trace syntax highlight](https://github.com/gerw/vim-HiLinkTrace)
 
 ### License
