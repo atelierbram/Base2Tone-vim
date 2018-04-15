@@ -158,6 +158,19 @@ let g:airline_theme='Base2Tone_EveningDark'
 " let g:airline_theme='Base2Tone_CaveLight'
 ```
 
+### Optional [Lightline](https://github.com/itchyny/lightline.vim) Support with Base2Tone
+```vim
+" lightline {{{
+" -- INSERT -- is redundant because the mode information is displayed in the statusline:
+set noshowmode
+let g:lightline = {
+      \ 'colorscheme': 'Base2Tone_Pool',
+      \ }
+" or any of the other colorschemes
+" template is smart and detects light or dark colorscheme being used
+" }}}
+```
+ 
 ### Optional (re)generate theme(s)
 These themes are generated with [Base16 Builder](https://github.com/base16-builder/base16-builder) and can be adapted and regenerated with having that CLI installed.
 
