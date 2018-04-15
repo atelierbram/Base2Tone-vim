@@ -1,5 +1,6 @@
 " Filename: Base2Tone_Space.vim (https://github.com/atelierbram/Base2Tone-vim/blob/master/autoload/lightline/colorscheme/Base2Tone_Space.vim)
 " Scheme: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
+" Info: http://base2t.one/
 " License: MIT License
 
 let s:cuicolors = {
@@ -49,6 +50,49 @@ let s:violet = [ '#6363ee', s:cuicolors.violet[s:cuiindex] ]
 let s:blue = [ '#7676f4', s:cuicolors.blue[s:cuiindex] ]
 let s:cyan = [ '#b25424', s:cuicolors.cyan[s:cuiindex] ]
 let s:green = [ '#ec7336', s:cuicolors.green[s:cuiindex] ]
+
+if lightline#colorscheme#background() ==# 'light'
+  let [ s:base03, s:base3 ] = [ s:base3, s:base03 ]
+  let [ s:base02, s:base2 ] = [ s:base2, s:base02 ]
+  let [ s:base01, s:base1 ] = [ s:base1, s:base01 ]
+  let [ s:base00, s:base0 ] = [ s:base0, s:base00 ]
+  let [ s:blue, s:green ] = [ s:green, s:blue ]
+endif
+
+let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
+let s:p.normal.left = [ [ s:base03, s:blue ], [ s:base03, s:base00 ] ]
+let s:p.normal.right = [ [ s:base03, s:base1 ], [ s:base03, s:base00 ] ]
+let s:p.inactive.right = [ [ s:base03, s:base00 ], [ s:base0, s:base02 ] ]
+let s:p.inactive.left =  [ [ s:base0, s:base02 ], [ s:base0, s:base02 ] ]
+let s:p.insert.left = [ [ s:base03, s:green ], [ s:base03, s:base00 ] ]
+let s:p.replace.left = [ [ s:base03, s:red ], [ s:base03, s:base00 ] ]
+let s:p.visual.left = [ [ s:base03, s:magenta ], [ s:base03, s:base00 ] ]
+let s:p.normal.middle = [ [ s:base1, s:base02 ] ]
+let s:p.inactive.middle = [ [ s:base01, s:base02 ] ]
+let s:p.tabline.left = [ [ s:base03, s:base00 ] ]
+let s:p.tabline.tabsel = [ [ s:base03, s:base1 ] ]
+let s:p.tabline.middle = [ [ s:base0, s:base02 ] ]
+let s:p.tabline.right = copy(s:p.normal.right)
+let s:p.normal.error = [ [ s:base03, s:red ] ]
+let s:p.normal.warning = [ [ s:base03, s:yellow ] ]
+
+let g:lightline#colorscheme#Base2Tone_Space#palette = lightline#colorscheme#flatten(s:p)
+let s:base03 = [ '#24242e', 236   ]
+let s:base02 = [ '#333342', 237   ]
+let s:base01 = [ '#737391', 245   ]
+let s:base00 = [ '#8a8aa3', 246   ]
+let s:base0 = [ '#a1a1b5', 248   ]
+let s:base1 = [ '#b8b8c7', 250   ]
+let s:base2 = [ '#cecee3', 252   ]
+let s:base3 = [ '#ebebff', 231   ]
+let s:yellow = [ '#fe8c52', 209   ]
+let s:orange = [ '#f37b3f', 172   ]
+let s:red = [ '#5151e6', 61    ]
+let s:magenta = [ '#767693', 243   ]
+let s:violet = [ '#6363ee', 63    ]
+let s:blue = [ '#7676f4', 69    ]
+let s:cyan = [ '#b25424', 130   ]
+let s:green = [ '#ec7336', 202   ]
 
 if lightline#colorscheme#background() ==# 'light'
   let [ s:base03, s:base3 ] = [ s:base3, s:base03 ]
