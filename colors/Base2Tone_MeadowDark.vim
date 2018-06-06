@@ -310,7 +310,7 @@ if has('nvim')
 hi! link TermCursor Cursor
 hi TermCursorNC ctermfg=236    ctermbg=70     guifg=s:gui00 guibg=s:gui09 guisp=NONE cterm=NONE gui=NONE
   let g:terminal_color_0  = "#" . s:gui00
-  let g:terminal_color_1  = "#" . s:gui01
+  let g:terminal_color_1  = "#" . s:gui0F
   let g:terminal_color_2  = "#" . s:gui02
   let g:terminal_color_3  = "#" . s:gui03
   let g:terminal_color_4  = "#" . s:gui04
@@ -324,7 +324,7 @@ hi TermCursorNC ctermfg=236    ctermbg=70     guifg=s:gui00 guibg=s:gui09 guisp=
   let g:terminal_color_12 = "#" . s:gui0C
   let g:terminal_color_13 = "#" . s:gui0D
   let g:terminal_color_14 = "#" . s:gui0E
-  let g:terminal_color_15 = "#" . s:gui0F
+  let g:terminal_color_15 = "#" . s:gui01
 endif
 
 " Remove functions
