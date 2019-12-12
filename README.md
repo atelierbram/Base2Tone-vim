@@ -97,29 +97,42 @@ colorscheme Base2Tone_EveningDark
 " colorscheme Base2Tone_SpaceDark
 " colorscheme Base2Tone_EarthDark
 " colorscheme Base2Tone_ForestDark
+" colorscheme Base2Tone_FieldDark
+" colorscheme Base2Tone_GardenDark
 " colorscheme Base2Tone_DesertDark
 " colorscheme Base2Tone_LakeDark
 " colorscheme Base2Tone_MeadowDark
 " colorscheme Base2Tone_DrawbridgeDark
+" colorscheme Base2Tone_MallDark
+" colorscheme Base2Tone_SuburbDark
+" colorscheme Base2Tone_LavenderDark
 " colorscheme Base2Tone_PoolDark
+" colorscheme Base2Tone_PorchDark
 " colorscheme Base2Tone_HeathDark
 " colorscheme Base2Tone_CaveDark
+" colorscheme Base2Tone_MotelDark
 
 " Base2Tone Light
-" set background=light
 " colorscheme Base2Tone_EveningLight
 " colorscheme Base2Tone_MorningLight
 " colorscheme Base2Tone_SeaLight
 " colorscheme Base2Tone_SpaceLight
 " colorscheme Base2Tone_EarthLight
 " colorscheme Base2Tone_ForestLight
+" colorscheme Base2Tone_FieldLight
+" colorscheme Base2Tone_GardenLight
 " colorscheme Base2Tone_DesertLight
 " colorscheme Base2Tone_LakeLight
 " colorscheme Base2Tone_MeadowLight
 " colorscheme Base2Tone_DrawbridgeLight
+" colorscheme Base2Tone_MallLight
+" colorscheme Base2Tone_SuburbLight
+" colorscheme Base2Tone_LavenderLight
 " colorscheme Base2Tone_PoolLight
+" colorscheme Base2Tone_PorchLight
 " colorscheme Base2Tone_HeathLight
 " colorscheme Base2Tone_CaveLight
+" colorscheme Base2Tone_MotelLight
 ```
 
 ### Optional [Airline](https://github.com/vim-airline/vim-airline) Support
@@ -129,19 +142,27 @@ These themes are tested in Gvim, but when using Vim within terminals which **do 
 " Dark
 let g:airline_theme='Base2Tone_EveningDark'
 " or any of the other themes:
+" Dark
 " let g:airline_theme='Base2Tone_MorningDark'
 " let g:airline_theme='Base2Tone_SeaDark'
 " let g:airline_theme='Base2Tone_SpaceDark'
 " let g:airline_theme='Base2Tone_EarthDark'
 " let g:airline_theme='Base2Tone_ForestDark'
+" let g:airline_theme='Base2Tone_FieldDark'
+" let g:airline_theme='Base2Tone_GardenDark'
 " let g:airline_theme='Base2Tone_DesertDark'
 " let g:airline_theme='Base2Tone_LakeDark'
 " let g:airline_theme='Base2Tone_MeadowDark'
 " let g:airline_theme='Base2Tone_DrawbridgeDark'
+" let g:airline_theme='Base2Tone_MallDark'
+" let g:airline_theme='Base2Tone_SuburbDark'
+" let g:airline_theme='Base2Tone_LavenderDark'
 " let g:airline_theme='Base2Tone_PoolDark'
+" let g:airline_theme='Base2Tone_PorchDark'
 " let g:airline_theme='Base2Tone_HeathDark'
 " let g:airline_theme='Base2Tone_CaveDark'
-"
+" let g:airline_theme='Base2Tone_MotelDark'
+
 " Light
 " let g:airline_theme='Base2Tone_EveningLight'
 " let g:airline_theme='Base2Tone_MorningLight'
@@ -149,13 +170,20 @@ let g:airline_theme='Base2Tone_EveningDark'
 " let g:airline_theme='Base2Tone_SpaceLight'
 " let g:airline_theme='Base2Tone_EarthLight'
 " let g:airline_theme='Base2Tone_ForestLight'
+" let g:airline_theme='Base2Tone_FieldLight'
+" let g:airline_theme='Base2Tone_GardenLight'
 " let g:airline_theme='Base2Tone_DesertLight'
 " let g:airline_theme='Base2Tone_LakeLight'
 " let g:airline_theme='Base2Tone_MeadowLight'
 " let g:airline_theme='Base2Tone_DrawbridgeLight'
+" let g:airline_theme='Base2Tone_MallLight'
+" let g:airline_theme='Base2Tone_SuburbLight'
+" let g:airline_theme='Base2Tone_LavenderLight'
 " let g:airline_theme='Base2Tone_PoolLight'
+" let g:airline_theme='Base2Tone_PorchLight'
 " let g:airline_theme='Base2Tone_HeathLight'
 " let g:airline_theme='Base2Tone_CaveLight'
+" let g:airline_theme='Base2Tone_MotelLight'
 ```
 
 ### Optional [Lightline](https://github.com/itchyny/lightline.vim) Support with Base2Tone
@@ -170,7 +198,7 @@ let g:lightline = {
 " template is smart and detects light or dark colorscheme being used
 " }}}
 ```
- 
+
 ### Optional (re)generate theme(s)
 These themes are generated with [Base16 Builder](https://github.com/base16-builder/base16-builder) and can be adapted and regenerated with having that CLI installed.
 
