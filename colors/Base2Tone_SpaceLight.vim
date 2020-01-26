@@ -18,6 +18,7 @@ let s:gui0C = "5151e6"
 let s:gui0D = "e66e33"
 let s:gui0E = "aaaaca"
 let s:gui0F = "cecee3"
+let s:gui0G = "7676f4"
 
 " Terminal color definitions
 let s:cterm00 = "231   "
@@ -36,6 +37,7 @@ let s:cterm0C = "61    "
 let s:cterm0D = "202   "
 let s:cterm0E = "248   "
 let s:cterm0F = "252   "
+let s:cterm0G = "69    "
 
 " Theme setup
 hi clear
@@ -82,7 +84,7 @@ call <sid>hi("Folded",        s:gui03, s:gui01, s:cterm03, s:cterm01, "")
 call <sid>hi("IncSearch",     s:gui00, s:gui0E, s:cterm00, s:cterm0E, "none")
 call <sid>hi("Italic",        "", "", "", "", "none")
 call <sid>hi("Macro",         s:gui08, "", s:cterm08, "", "")
-call <sid>hi("MatchParen",    s:gui00, s:gui03, s:cterm00, s:cterm03,  "")
+call <sid>hi("MatchParen",    s:gui0G, s:gui02, s:cterm0G, s:cterm02,  "")
 call <sid>hi("ModeMsg",       s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("MoreMsg",       s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("Question",      s:gui0D, "", s:cterm0D, "", "")
