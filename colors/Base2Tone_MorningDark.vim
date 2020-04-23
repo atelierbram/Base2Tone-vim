@@ -13,7 +13,7 @@ let s:gui07 = "dee6f7"
 let s:gui08 = "063289"
 let s:gui09 = "896724"
 let s:gui0A = "b29762"
-let s:gui0B = "544d40"
+let s:gui0B = "867b65"
 let s:gui0C = "e5ddcd"
 let s:gui0D = "c6b28b"
 let s:gui0E = "1659df"
@@ -31,7 +31,7 @@ let s:cterm07 = "255   "
 let s:cterm08 = "18    "
 let s:cterm09 = "94    "
 let s:cterm0A = "136   "
-let s:cterm0B = "238   "
+let s:cterm0B = "243   "
 let s:cterm0C = "188   "
 let s:cterm0D = "249   "
 let s:cterm0E = "27    "
@@ -266,13 +266,13 @@ exe 'hi link coffeeConditional Conditional'
 " Ruby highlighting
 call <sid>hi("rubyAttribute",               s:gui0D, "", s:cterm0D, "", "")
 call <sid>hi("rubyInclude",                 s:gui0D, "", s:cterm0D, "", "")
-call <sid>hi("rubyLocalVariableOrMethod",   s:gui0F, "", s:cterm0F, "", "")
-call <sid>hi("rubyCurlyBlock",              s:gui0F, "", s:cterm0F, "", "")
+call <sid>hi("rubyLocalVariableOrMethod",   s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("rubyCurlyBlock",              s:gui0E, "", s:cterm0E, "", "")
 call <sid>hi("rubyConstant",                s:gui0A, "", s:cterm0A, "", "")
 call <sid>hi("rubyInterpolation",           s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("rubyInterpolationDelimiter",  s:gui0F, "", s:cterm0F, "", "")
 call <sid>hi("rubyRegexp",                  s:gui0C, "", s:cterm0C, "", "")
-call <sid>hi("rubySymbol",                  s:gui0B, "", s:cterm0B, "", "")
+call <sid>hi("rubySymbol",                  s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("rubyStringDelimiter",         s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("rubyConditional",             s:gui0E, "", s:cterm0E, "", "")
 call <sid>hi("rubyRepeat",                  s:gui0E, "", s:cterm0E, "", "")
