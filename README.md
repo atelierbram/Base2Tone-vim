@@ -222,7 +222,7 @@ Credits to [Simurai](https://simurai.com/), for these themes are based on [Duoto
 - [Alois](https://github.com/aloisdg) and [Alex Booker](https://github.com/bookercodes) for rejuvenating the best colorscheme builder tool on the internet: [Base16 Builder](https://github.com/base16-builder/base16-builder)
 
 ### Resources
-- [Orginal Colorscheme for Atom on simurai.com](https://simurai.com/projects/2016/01/01/duotone-themes/)
+- [Orginal Colorscheme for Atom on simurai.com](https://simurai.com/projects/2016/01/01/duotone-themes)
 - [Orginal Colorscheme for Atom on Github](https://github.com/simurai/duotone-dark-syntax/blob/master/styles/colors.less)
 - [Creating Colorschemes for Vim on vimcasts.org](https://vimcasts.org/episodes/creating-colorschemes-for-vim/)
 - [Meet minpac](https://vimcasts.org/episodes/minpac/)
