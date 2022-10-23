@@ -1,6 +1,6 @@
 # Base2Tone-vim
 
-Base2Tone-vim – colorschemes for Vim – one of the syntax-highlighting applications containing the colorschemes of [Base2Tone](https://base2t.one) which were based on [Duotone Themes](https://simurai.com/projects/2016/01/01/duotone-themes/) by [Simurai](https://simurai.com/) for Atom.
+Base2Tone-vim – colorschemes for Vim – collection of the syntax-highlighting themes containing the colorschemes of [Base2Tone](https://base2t.one) which were based on [Duotone Themes](https://simurai.com/projects/2016/01/01/duotone-themes) by [Simurai](https://simurai.com/) for Atom.
 > “DuoTone themes use only 2 hues (7 shades in total). It tones down less important parts (like punctuation and brackets) and highlights only the important ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.”
 
 **NOTE**: These color schemes are optimized and have been tested in the _GUI_ version of Vim, and will work in terminal versions as well. For terminals which don’t support truecolor the colors will now use converted colors which are as close as possible in the 8-bit 256 colorspace. It works  fine and looks good in Neovim, for the Gui colors for Neovim are now also specifically defined.
@@ -217,7 +217,7 @@ The templates `light.ejs` and `dark.ejs` can be found in `db/vim`.
 After adapting the templates, or after making a colorscheme (`db/schemes`) one can just type `io.sh` from the commandline, within the parent working directory of Base2Tone-vim. The colorscheme-files will than be regenerated within the `colors`-folder, and the themes for Airline in the `autoload`-folder.
 
 ### Credits
-Credits to [Simurai](https://simurai.com/), for these themes are based on [Duotone Themes](https://simurai.com/projects/2016/01/01/duotone-themes/) for Atom.
+Credits to [Simurai](https://simurai.com/), for these themes are based on [Duotone Themes](https://simurai.com/projects/2016/01/01/duotone-themes) for Atom.
 - [Chis Kempson](https://github.com/chriskempson) for creating [Base16 Builder](https://github.com/chriskempson/base16-builder)
 - [Alois](https://github.com/aloisdg) and [Alex Booker](https://github.com/bookercodes) for rejuvenating the best colorscheme builder tool on the internet: [Base16 Builder](https://github.com/base16-builder/base16-builder)
 
